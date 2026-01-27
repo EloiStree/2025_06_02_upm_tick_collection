@@ -4,7 +4,7 @@ namespace Eloi.Tick
 {
     public class TickMono_Awake : TickMono_AbstractDefault
     {
-        void Start()
+        void Awake()
         {
             base.TriggerTick();
         }
