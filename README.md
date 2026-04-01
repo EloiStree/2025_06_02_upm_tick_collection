@@ -1,5 +1,4 @@
-
-# OpenUPM: Tick Collection  
+# Tick Collection  
 
 When you’re not using No-Code plugins, your code tends to get cluttered with repetitive lines like:  
 - `Start()`, `Enable()`, `Disable()`, `Awake()`  
