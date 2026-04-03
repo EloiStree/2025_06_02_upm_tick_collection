@@ -1,13 +1,14 @@
 {
-    "name": "be.elab.tickcollection",
-    "displayName": "Tick Collection",
-    "version": "2025.1.16",
-    "unity": "2018.1",
-    "description": "Tools to trick actions easily in protyping project.",
-    "keywords": [
-        "Script",
-        "Tool"
-    ],"samples": [
+  "name": "be.elab.tickcollection",
+  "displayName": "\ud83e\uddf0,core: Tick Collection",
+  "version": "2025.1.16",
+  "unity": "2018.1",
+  "description": "Tools to trick actions easily in protyping project.",
+  "keywords": [
+    "Script",
+    "Tool"
+  ],
+  "samples": [
     {
       "displayName": "Demo Scene",
       "description": "A sample scene that demonstrates the features of this package.",
@@ -19,5 +20,5 @@
     "mail": "",
     "url": "https://github.com/EloiStree/"
   },
-    "category": "Script"
+  "category": "Script"
 }
