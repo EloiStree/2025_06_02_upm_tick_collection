@@ -1,3 +1,8 @@
+
+```
+git submodule add https://github.com/EloiStree/2025_06_02_upm_tick_collection.git Packages/be.elab.tickcollection
+```
+
 # Tick Collection  
 
 When you’re not using No-Code plugins, your code tends to get cluttered with repetitive lines like:  
