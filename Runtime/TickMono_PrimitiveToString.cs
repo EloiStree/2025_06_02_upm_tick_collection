@@ -9,6 +9,7 @@ namespace Eloi.Tick {
     {   
         public string m_lastParsed;
         public string m_format = "{0}";
+        public string m_split_array = ", ";
         public UnityEvent<string> m_onParsed;
         public void PushIn(string value)
         {
@@ -33,6 +34,14 @@ namespace Eloi.Tick {
         public void PushIn(Quaternion value) => PushIn(string.Format(m_format, value));
         public void PushIn(Color value) => PushIn(string.Format(m_format, value));
         public void PushIn(Color32 value) => PushIn(string.Format(m_format, value));
+
+
+        public void PushIn(Vector2Int value) => PushIn(string.Format(m_format, value));
+        public void PushIn(Vector3Int value) => PushIn(string.Format(m_format, value));
+
+        public void PushInArray(byte[] value) => PushIn(string.Join(m_split_array, value));
+
+        public void PushInIndexInteger(int index, int value ) => PushIn(string.Format(m_format, index, value));
 
     }
 
