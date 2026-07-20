@@ -8,6 +8,7 @@ namespace Eloi.Tick
         public Transform m_parentTransform;
         public Transform m_whereToCreateIt;
         public GameObject m_created;
+        public bool m_useAutoDestroy = true;
         public float m_destroyTime = 5f;
         public void CreatePrefab()
         {
@@ -27,11 +28,14 @@ namespace Eloi.Tick
 
             m_created.SetActive(true);
            
-            
+            if (m_useAutoDestroy)
+            {
+
                 if (Application.isPlaying)
                     Destroy(m_created, m_destroyTime);
                 else
                     DestroyImmediate(m_created, true);
+            }
             
 
 
